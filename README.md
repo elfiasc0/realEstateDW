@@ -1,6 +1,10 @@
 # Home Expert – Real Estate Data Warehouse
 
-A data warehouse project for **Home Expert**, a real estate agency operating across Poland. The project focuses on the **property listing management** process and provides analytical support for apartment sales, buyer interest, pricing, profitability, and time on market.
+A fictional academic data warehouse project based on a simulated real estate agency, Home Expert.
+
+The project demonstrates the design and implementation of a data warehouse for analyzing the property listing management process, including apartment sales, potential buyer interest, pricing, profitability, and time on market.
+
+Note: Home Expert and the business data used in this project are fictional and were created for educational purposes.
 
 ## Technologies
 
