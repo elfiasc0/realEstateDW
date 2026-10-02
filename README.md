@@ -1,46 +1,44 @@
 # Home Expert – Real Estate Data Warehouse
 
-A fictional academic data warehouse project based on a simulated real estate agency, Home Expert.
+A **fictional academic data warehouse project** based on a simulated real estate agency, **Home Expert**.
 
-The project demonstrates the design and implementation of a data warehouse for analyzing the property listing management process, including apartment sales, potential buyer interest, pricing, profitability, and time on market.
+The project demonstrates the design and implementation of a data warehouse for analyzing the **property listing management** process, including apartment sales, potential buyer interest, pricing, profitability, and time on market.
 
-Note: Home Expert and the business data used in this project are fictional and were created for educational purposes.
+> **Note:** Home Expert and the business data used in this project are fictional and were created for educational purposes.
 
 ## Technologies
 
 * **Microsoft SQL Server** – data warehouse database
 * **SQL Server Integration Services (SSIS)** – ETL and data integration
 * **Python** – data preparation and processing
-* **Power BI** – data visualization and business intelligence
-* **Excel / CSV** – potential buyer source data
-* **PropertyMaster** – primary operational data source
+* **Power BI** – data visualization and analysis
+* **Excel / CSV** – source data
+* **PropertyMaster** – fictional operational data source used in the project
 
 ## Project Overview
 
-The purpose of the warehouse is to integrate operational data and provide a multidimensional model for analyzing the performance of Home Expert's property listings.
+The project follows a simulated real estate business scenario in which the agency wants to analyze its apartment listings and sales performance.
 
-The warehouse supports questions such as:
+The warehouse is designed to support analytical questions such as:
 
-* Which areas attract the most buyers?
+* Which areas attract the most potential buyers?
 * Which apartment sizes receive the most interest?
 * In which districts do apartments sell the fastest?
-* How do apartment prices compare across cities?
-* Which districts receive the most buyer interest?
+* How do listing prices vary between cities?
+* Which districts attract the most potential buyers?
 * How does the number of new listings change over time?
-* Which real estate agents have the most successful listings?
-* How does listing-related profit vary across cities?
+* Which real estate agents handle the most successful listings?
+* How does profit vary between locations?
 
-## Data Warehouse Architecture
+## Data Warehouse Model
 
-The solution follows a dimensional data warehouse approach.
+The warehouse uses a **dimensional model** with two main fact tables.
 
-### Fact Tables
+### `Apartment_sale`
 
-#### `Apartment_sale`
+Records apartment sale facts.
 
-Stores apartment sale transactions.
-
-**Measures include:**
+Key measures include:
 
 * Number of sales
 * Listing price
@@ -52,132 +50,103 @@ Stores apartment sale transactions.
 * Number of apartments
 * Average sale speed per apartment
 
-#### `Interest`
+### `Interest`
 
-Stores potential buyers' interest in apartments.
+Records potential buyers' interest in apartments.
 
-**Measures include:**
+Key measures include:
 
 * Number of interest records
 * Number of potential buyers
 * Number of apartments
 * Average number of potential buyers per apartment
 
-### Dimension Tables
+## Dimensions
 
-The warehouse contains the following main dimensions:
+The model contains the following dimensions:
 
-| Dimension             | Description                                     |
-| --------------------- | ----------------------------------------------- |
-| **Apartment**         | Apartment location and characteristics          |
-| **Person**            | Owners, buyers, and potential buyers            |
-| **Real Estate Agent** | Agent information and seniority                 |
-| **Branch**            | Branch location and branch-level information    |
-| **Date**              | Date, year, and month                           |
-| **Junk Sale**         | Sale status, apartment condition, and agreement |
-| **Junk Interest**     | Potential buyer status                          |
+* **Apartment**
+* **Person**
+* **Real Estate Agent**
+* **Branch**
+* **Date**
+* **Junk Sale**
+* **Junk Interest**
 
-The Apartment dimension supports a geographical hierarchy of **City → District → Address**, while the Date dimension supports **Year → Month** analysis.
+The model also supports analytical hierarchies such as:
 
-## ETL Process
+```text
+Apartment Location
+City → District → Address
 
-**SSIS** is used to extract, transform, and load data into the SQL Server data warehouse.
+Time
+Year → Month
+```
 
-The main source systems are:
+## ETL
 
-* **PropertyMaster** – apartment, owner, buyer, selling process, and real estate agent data
-* **Excel/CSV** – potential buyer information
-* **Generated calendar data** – Date dimension
+The ETL process is implemented using **SQL Server Integration Services (SSIS)**.
 
-Python is used as part of the data preparation workflow.
+The project uses simulated source data representing:
 
-The ETL process includes activities such as:
+* Apartments
+* Owners
+* Buyers
+* Potential buyers
+* Real estate agents
+* Selling processes
+* Branches
 
-1. Extracting data from source systems
-2. Cleaning and transforming source data
-3. Creating surrogate keys
-4. Calculating derived attributes and measures
-5. Loading dimension tables
-6. Loading fact tables
-7. Preparing data for analytical reporting
+Python is also used for data preparation and processing.
 
-## Data Warehouse Design
+The general workflow is:
 
-The model uses **surrogate keys** for dimensions and foreign keys in the fact tables.
+```text
+Source Data
+    ↓
+Python / Data Preparation
+    ↓
+SSIS ETL
+    ↓
+SQL Server Data Warehouse
+    ↓
+Power BI
+    ↓
+Business Analysis
+```
 
-It also applies **Slowly Changing Dimension (SCD)** concepts to maintain appropriate dimension information. For example, the Person dimension contains an `IsCurrent` attribute for identifying the current version of a record.
+## Power BI
 
-The `Junk_sale` dimension combines several low-cardinality attributes:
+The resulting warehouse data can be analyzed in **Power BI** to explore:
 
-* Status
-* Apartment condition
-* Agreement
-
-The `Junk_interest` dimension stores potential buyer status values such as viewing, negotiating price, contract signing, payment, and withdrawn.
-
-## Power BI Analytics
-
-The warehouse data is used in **Power BI** to support analysis of:
-
-* Apartment sales performance
-* Average sale speed
+* Sales performance
 * Days on market
+* Sale speed
 * Listing and final prices
-* Agency profit
+* Profit
 * Buyer interest
 * Apartment characteristics
 * Geographic differences
-* Branch performance
-* Real estate agent performance
-* Monthly and yearly trends
-
-The multidimensional model was designed to support analytical questions involving apartment characteristics, location, buyer interest, sale speed, branches, and time.
+* Agent and branch performance
+* Time-based trends
 
 ## Example Analytical Questions
 
-The warehouse can be used to answer questions such as:
+The model was designed to support questions such as:
 
-> What characteristics are shared by the fastest-selling apartments?
+1. What characteristics are shared by the fastest-selling apartments?
+2. How does average sale speed differ between districts?
+3. Is sale speed related to price fluctuation?
+4. How does the number of potential buyers relate to sale speed?
+5. Which apartment size categories attract the most potential buyers?
+6. Which districts attract the most buyers?
+7. How does buyer interest change from month to month?
+8. How does branch size relate to apartment sales performance?
 
-> How does average sale speed differ between districts and cities?
+## Key Data Warehouse Concepts
 
-> Is apartment sale speed related to price fluctuation?
+This project demonstrates:
 
-> How does the number of interested buyers relate to sale speed?
-
-> Which apartment size categories attract the most potential buyers?
-
-> Which districts attract the most buyers?
-
-> How does buyer interest change over time?
-
-## Project Structure
-
-```text
-.
-├── README.md
-├── SQL/
-│   ├── database/
-│   ├── tables/
-│   ├── views/
-│   └── queries/
-├── SSIS/
-│   └── ...
-├── Python/
-│   └── ...
-├── PowerBI/
-│   └── ...
-├── Data/
-│   └── ...
-└── Documentation/
-    └── ...
-```
-
-> The folder structure should be adjusted to match the actual repository.
-
-## Key Concepts Demonstrated
-
-* Data warehouse architecture
 * Dimensional modeling
 * Fact and dimension tables
 * Fact table granularity
@@ -185,8 +154,24 @@ The warehouse can be used to answer questions such as:
 * Slowly Changing Dimensions
 * Junk dimensions
 * Dimension hierarchies
-* ETL with SSIS
-* SQL Server database design
+* ETL development with SSIS
+* SQL Server data warehouse implementation
 * Python data processing
-* Power BI reporting and visualization
-* Business-oriented analytical queries
+* Power BI analytics
+
+## Project Structure
+
+```text
+.
+├── README.md
+├── SQL/
+├── SSIS/
+├── Python/
+├── PowerBI/
+├── Data/
+└── Documentation/
+```
+
+## Academic Project
+
+This project was developed as an **educational exercise in data warehouse design and implementation**. The company, source systems, and business data represent a simulated scenario rather than a real commercial organization.
