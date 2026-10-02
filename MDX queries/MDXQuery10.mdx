@@ -1,0 +1,16 @@
+--What is the average number of potential buyers per each price range in each branch
+
+--What is the average number of potential buyers per each distrcit in each city? 
+
+
+
+SELECT
+{
+    [Measures].[AveragePotentialBuyersPerApt]
+} ON COLUMNS,
+CROSSJOIN(
+    [Apartment].[City].Children,
+    [Apartment].[District].Children  
+    ) ON ROWS
+FROM 
+    [Propertymaster DW]

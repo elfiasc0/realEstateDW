@@ -1,0 +1,170 @@
+WITH 
+
+-- Apartments with 2 buyers
+MEMBER [Measures].[NumOfApt_2] AS
+    Count(
+        Filter(
+            [Apartment].[ID Apartment].Members,
+            [Measures].[Number of Potential Buyer] = 2
+        )
+    )
+
+MEMBER [Measures].[TotalSaleSpeed_2] AS
+    Sum(
+        Filter(
+            [Apartment].[ID Apartment].Members,
+            [Measures].[Number of Potential Buyer] = 2
+        ),
+        [Measures].[AverageSaleSpeed]
+    )
+
+MEMBER [Measures].[AverageSaleSpeed_2] AS
+    IIF(
+        [Measures].[NumOfApt_2] = 0,
+        NULL,
+        [Measures].[TotalSaleSpeed_2] / [Measures].[NumOfApt_2]
+    )
+
+-- Apartments with 3 buyers
+MEMBER [Measures].[NumOfApt_3] AS
+    Count(
+        Filter(
+            [Apartment].[ID Apartment].Members,
+            [Measures].[Number of Potential Buyer] = 3
+        )
+    )
+
+MEMBER [Measures].[TotalSaleSpeed_3] AS
+    Sum(
+        Filter(
+            [Apartment].[ID Apartment].Members,
+            [Measures].[Number of Potential Buyer] = 3
+        ),
+        [Measures].[AverageSaleSpeed]
+    )
+
+MEMBER [Measures].[AverageSaleSpeed_3] AS
+    IIF(
+        [Measures].[NumOfApt_3] = 0,
+        NULL,
+        [Measures].[TotalSaleSpeed_3] / [Measures].[NumOfApt_3]
+    )
+
+-- Apartments with 4 buyers
+MEMBER [Measures].[NumOfApt_4] AS
+    Count(
+        Filter(
+            [Apartment].[ID Apartment].Members,
+            [Measures].[Number of Potential Buyer] = 4
+        )
+    )
+
+MEMBER [Measures].[TotalSaleSpeed_4] AS
+    Sum(
+        Filter(
+            [Apartment].[ID Apartment].Members,
+            [Measures].[Number of Potential Buyer] = 4
+        ),
+        [Measures].[AverageSaleSpeed]
+    )
+
+MEMBER [Measures].[AverageSaleSpeed_4] AS
+    IIF(
+        [Measures].[NumOfApt_4] = 0,
+        NULL,
+        [Measures].[TotalSaleSpeed_4] / [Measures].[NumOfApt_4]
+    )
+
+-- Apartments with 5 buyers
+MEMBER [Measures].[NumOfApt_5] AS
+    Count(
+        Filter(
+            [Apartment].[ID Apartment].Members,
+            [Measures].[Number of Potential Buyer] = 5
+        )
+    )
+
+MEMBER [Measures].[TotalSaleSpeed_5] AS
+    Sum(
+        Filter(
+            [Apartment].[ID Apartment].Members,
+            [Measures].[Number of Potential Buyer] = 5
+        ),
+        [Measures].[AverageSaleSpeed]
+    )
+
+MEMBER [Measures].[AverageSaleSpeed_5] AS
+    IIF(
+        [Measures].[NumOfApt_5] = 0,
+        NULL,
+        [Measures].[TotalSaleSpeed_5] / [Measures].[NumOfApt_5]
+    )
+
+-- Apartments with 6 buyers
+MEMBER [Measures].[NumOfApt_6] AS
+    Count(
+        Filter(
+            [Apartment].[ID Apartment].Members,
+            [Measures].[Number of Potential Buyer] = 6
+        )
+    )
+
+MEMBER [Measures].[TotalSaleSpeed_6] AS
+    Sum(
+        Filter(
+            [Apartment].[ID Apartment].Members,
+            [Measures].[Number of Potential Buyer] = 6
+        ),
+        [Measures].[AverageSaleSpeed]
+    )
+
+MEMBER [Measures].[AverageSaleSpeed_6] AS
+    IIF(
+        [Measures].[NumOfApt_6] = 0,
+        NULL,
+        [Measures].[TotalSaleSpeed_6] / [Measures].[NumOfApt_6]
+    )
+
+-- Apartments with 7 buyers
+MEMBER [Measures].[NumOfApt_7] AS
+    Count(
+        Filter(
+            [Apartment].[ID Apartment].Members,
+            [Measures].[Number of Potential Buyer] = 7
+        )
+    )
+
+MEMBER [Measures].[TotalSaleSpeed_7] AS
+    Sum(
+        Filter(
+            [Apartment].[ID Apartment].Members,
+            [Measures].[Number of Potential Buyer] = 7
+        ),
+        [Measures].[AverageSaleSpeed]
+    )
+
+MEMBER [Measures].[AverageSaleSpeed_7] AS
+    IIF(
+        [Measures].[NumOfApt_7] = 0,
+        NULL,
+        [Measures].[TotalSaleSpeed_7] / [Measures].[NumOfApt_7]
+    )
+
+SELECT 
+    {
+        [Measures].[NumOfApt_2],
+        [Measures].[AverageSaleSpeed_2],
+        [Measures].[NumOfApt_3],
+        [Measures].[AverageSaleSpeed_3],
+        [Measures].[NumOfApt_4],
+        [Measures].[AverageSaleSpeed_4],
+        [Measures].[NumOfApt_5],
+        [Measures].[AverageSaleSpeed_5],
+        [Measures].[NumOfApt_6],
+        [Measures].[AverageSaleSpeed_6],
+        [Measures].[NumOfApt_7],
+        [Measures].[AverageSaleSpeed_7]
+    } ON COLUMNS
+
+FROM 
+    [Propertymaster DW]

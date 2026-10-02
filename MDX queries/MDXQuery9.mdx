@@ -1,0 +1,9 @@
+--What are the top 5 districts in each branch that attract the most buyers?
+--UPDATED: What are the top 5 decades of construction of apartments in general that attract the most buyers? 
+--(because we constructed the database in such a way that each branch operates in 5 disctricts)
+
+SELECT
+{[Measures].[Number of Potential Buyer]} ON COLUMNS,
+TOPCOUNT([Apartment].[Decade Of Construction].Children, 5, [Measures].[Number of Potential Buyer]) ON ROWS
+FROM
+[PropertyMaster DW]

@@ -1,0 +1,23 @@
+-- Are there any common characteristics shared by the top 100 fast-selling apartments for the agency?
+
+SELECT 
+    { [Measures].[Days On Market] } ON COLUMNS,
+    BOTTOMCOUNT(
+	FILTER(
+        NonEmptyCrossJoin (
+          [Apartment].[Size Category].[Size Category].Members,
+          [Apartment].[Floor Number].[Floor Number].Members,
+          [Apartment].[Number of Rooms].[Number of Rooms].Members,
+          [Apartment].[Decade of Construction].[Decade of Construction].Members,
+          [Junk sale].[Condition].Members
+        ),
+		[Measures].[Days on market] > 0),
+      100,
+      [Measures].[Days on market]
+    ) ON ROWS
+FROM [Propertymaster DW]
+WHERE [Junk Sale].[Status].[Status].[Sold]
+
+
+
+

@@ -1,0 +1,7 @@
+-- Compare the average listing period for apartments in various districts in each city. 
+SELECT 
+    {[Measures].[AverageSaleSpeed]} ON COLUMNS,
+    {CROSSJOIN ([Apartment].[City].Children, --selecting all the cities
+		Descendants ([Apartment].[AptLocalizationHierarchy].CurrentMember, 
+					[Apartment].[AptLocalizationHierarchy].[District]))} ON ROWS
+FROM [Propertymaster DW]

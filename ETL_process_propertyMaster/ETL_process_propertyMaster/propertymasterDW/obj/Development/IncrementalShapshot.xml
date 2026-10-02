@@ -1,0 +1,110 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>propertymasterDW</Database>
+    <Server>DESKTOP-5NJQC8P</Server>
+    <ConnectionString>Data Source=DESKTOP-5NJQC8P;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>DoNotProcess</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>olfcck14zoj4tx5nBOIJEa3EvjQ=4/25/2025 11:59:51 PM4/25/2025 12:00:44 AM</TimeStamp>
+        <ID>
+          <String>Propertymaster DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>VxT8EO2gLuSDAm28Tj23aeHPGC0=4/25/2025 11:55:37 PM4/24/2025 11:03:28 PM</TimeStamp>
+        <ID>
+          <String>Propertymaster DW</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Twlm4q68Sm39cVXpMnDIxfOpaxs=5/29/2025 1:11:14 PM4/24/2025 11:03:28 PM</TimeStamp>
+        <ID>
+          <String>Date Dim</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>1A+g0Z+/QOLGm/CULPWUsXfONzo=5/29/2025 1:25:50 PM4/24/2025 11:03:28 PM</TimeStamp>
+        <ID>
+          <String>Person</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Ja/TWAj/Qb06AK/sKORaNzaMM/M=5/29/2025 1:25:50 PM4/24/2025 11:03:28 PM</TimeStamp>
+        <ID>
+          <String>Apartment</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>Q4NkmMctlDodcds7RLOSOQxUyk0=5/29/2025 1:25:50 PM4/24/2025 11:03:28 PM</TimeStamp>
+        <ID>
+          <String>Real Estate Agent</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>+NDjUfWGWh1umBCupgKA4tGHlB4=5/29/2025 1:11:14 PM4/24/2025 11:03:28 PM</TimeStamp>
+        <ID>
+          <String>Junk Sale</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>NPkYz3D09RtYuZEgqZ4R7+TZiEI=5/29/2025 1:11:14 PM4/24/2025 11:03:28 PM</TimeStamp>
+        <ID>
+          <String>Junk Interest</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>caA+llW9Sq8hmcUMKnQ6d//Qdl4=5/29/2025 1:11:14 PM4/24/2025 11:03:28 PM</TimeStamp>
+        <ID>
+          <String>Branch</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>oF868ml0/gYXug4EepLiC6VkP2w=5/29/2025 1:11:14 PM4/24/2025 11:03:28 PM</TimeStamp>
+        <ID>
+          <String>Apartment Sale</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>zC8lH4AH5Ixa19VsFcM1VrO8UGk=5/29/2025 2:17:30 PM4/24/2025 11:42:46 PM2+YPHTlWlpA5kQt332xPn9dRNQ0=5/29/2025 2:17:30 PM4/24/2025 11:03:28 PM</TimeStamp>
+        <ID>
+          <String>Propertymaster DW</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>gCY7+v6cl7T57wHc0xzfI/QFgU8=4/25/2025 11:55:37 PM4/24/2025 11:03:28 PM</TimeStamp>
+      <ID>
+        <String>propertymasterDW</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2025-05-29T12:17:34.02Z</LastDeployed>
+</DeploymentSnapshot>

@@ -1,0 +1,2010 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="f5aac600-6a33-4e81-bcf8-89e7f05ec7eb" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Propertymaster DW</ID>
+  <Name>Propertymaster DW</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
+      <Value>
+        <dds xmlns="">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="44" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-12117" scrolltop="1386" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="75" x="23707" y="11642" backcolor="2039583" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="1" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+            <font>
+              <ddsxmlobjectstreamwrapper binary="01ee0000900144420100065461686f6d61" />
+            </font>
+            <mouseicon>
+              <ddsxmlobjectstreamwrapper binary="6c74000000000000" />
+            </mouseicon>
+          </diagram>
+          <layoutmanager>
+            <ddsxmlobj />
+          </layoutmanager>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Date_Dim" left="299" top="7010" logicalid="22" controlid="1" masterid="0" hint1="0" hint2="0" width="3000" height="2156" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00006c080000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Date_Dim" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Person" left="5911" top="0" logicalid="23" controlid="2" masterid="0" hint1="0" hint2="0" width="3373" height="3188" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e00002d0d0000740c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Person" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Interest" left="11896" top="4774" logicalid="24" controlid="3" masterid="0" hint1="0" hint2="0" width="3797" height="4220" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000d50e00007c100000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Interest" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Apartment_Sale" left="5699" top="5588" logicalid="25" controlid="4" masterid="0" hint1="0" hint2="0" width="3797" height="5000" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000d50e000088130000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Apartment_Sale" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Real_Estate_Agent" left="6137" top="17670" logicalid="26" controlid="5" masterid="0" hint1="0" hint2="0" width="3638" height="3876" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000360e0000240f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Real_Estate_Agent" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Junk_Interest" left="12294" top="906" logicalid="27" controlid="6" masterid="0" hint1="0" hint2="0" width="3000" height="1468" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b0000bc050000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Junk_Interest" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Apartment" left="15212" top="10830" logicalid="28" controlid="7" masterid="0" hint1="0" hint2="0" width="3810" height="3876" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000e20e0000240f0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Apartment" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Junk_Sale" left="12175" top="17670" logicalid="29" controlid="8" masterid="0" hint1="0" hint2="0" width="3000" height="2156" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000b80b00006c080000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Junk_Sale" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="DdsShapes.DdsObjectManagedBridge" tooltip="Branch" left="20" top="18014" logicalid="30" controlid="9" masterid="0" hint1="0" hint2="0" width="3717" height="3188" noresize="0" nomove="0" nodefaultattachpoints="0" autodrag="1" usedefaultiddshape="1" selectable="1" showselectionhandles="1" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobjectstreaminitwrapper binary="000e0000850e0000740c0000" />
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dbo_Branch" vartype="8" />
+              </ddsxmlobj>
+            </layoutobject>
+            <shape groupshapeid="0" groupnode="0" />
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="3437" top="18109" logicalid="31" controlid="10" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Real_Esta__ID_br__640DD89F]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="9" destid="5" sourceattachpoint="15" destattachpoint="16" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="3737" y="18508" />
+              <point x="6137" y="18508" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="9196" top="5484" logicalid="32" controlid="11" masterid="0" hint1="0" hint2="0" width="3000" height="804" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Interest__762C88DA]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="4" destid="3" sourceattachpoint="15" destattachpoint="16" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="9496" y="5888" />
+              <point x="10696" y="5888" />
+              <point x="10696" y="5784" />
+              <point x="11896" y="5784" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="8984" top="2295" logicalid="33" controlid="12" masterid="0" hint1="0" hint2="0" width="3212" height="3239" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Interest__ID_pot__7814D14C]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="3" sourceattachpoint="19" destattachpoint="14" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="9284" y="2694" />
+              <point x="10590" y="2694" />
+              <point x="10590" y="5234" />
+              <point x="11896" y="5234" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="12295" top="1875" logicalid="34" controlid="13" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Interest__ID_jun__7720AD13]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="6" destid="3" sourceattachpoint="1" destattachpoint="2" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="12694" y="2374" />
+              <point x="12694" y="4774" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="6098" top="2689" logicalid="35" controlid="14" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Apartment__ID_bu__6D9742D9]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="4" sourceattachpoint="1" destattachpoint="2" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="6497" y="3188" />
+              <point x="6497" y="5588" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="8947" top="10288" logicalid="36" controlid="15" masterid="0" hint1="0" hint2="0" width="4028" height="7882" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Apartment__ID_ju__73501C2F]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="8" destid="4" sourceattachpoint="0" destattachpoint="13" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="12575" y="17670" />
+              <point x="12575" y="14129" />
+              <point x="9247" y="14129" />
+              <point x="9247" y="10588" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="5907" top="10288" logicalid="37" controlid="16" masterid="0" hint1="0" hint2="0" width="890" height="7882" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Apartment__ID_re__6F7F8B4B]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="5" destid="4" sourceattachpoint="0" destattachpoint="3" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="6306" y="17670" />
+              <point x="6306" y="14129" />
+              <point x="6497" y="14129" />
+              <point x="6497" y="10588" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="2999" top="7139" logicalid="38" controlid="17" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Apartment__ID_fo__7167D3BD]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="4" sourceattachpoint="11" destattachpoint="20" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="3299" y="7538" />
+              <point x="5699" y="7538" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="6648" top="2689" logicalid="39" controlid="18" masterid="0" hint1="0" hint2="0" width="799" height="3199" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Apartment__ID_ow__6CA31EA0]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="2" destid="4" sourceattachpoint="3" destattachpoint="4" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="7047" y="3188" />
+              <point x="7047" y="5588" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="2999" top="8239" logicalid="40" controlid="19" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Apartment__ID_st__7073AF84]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="4" sourceattachpoint="15" destattachpoint="24" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="3299" y="8638" />
+              <point x="5699" y="8638" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="9196" top="9988" logicalid="41" controlid="20" masterid="0" hint1="0" hint2="0" width="6316" height="1530" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Apartment__ID_ap__6E8B6712]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="7" destid="4" sourceattachpoint="14" destattachpoint="31" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="15212" y="11118" />
+              <point x="10696" y="11118" />
+              <point x="10696" y="10288" />
+              <point x="9496" y="10288" />
+            </connector>
+          </ddscontrol>
+          <ddscontrol controlprogid="MSDDS.Polyline.080.1" left="2999" top="7689" logicalid="42" controlid="21" masterid="0" hint1="0" hint2="0" width="3000" height="799" noresize="0" nomove="0" nodefaultattachpoints="1" autodrag="0" usedefaultiddshape="0" selectable="1" showselectionhandles="0" allownudging="1" isannotation="0" dontautolayout="0" groupcollapsed="0" tabstop="1" visible="1" snaptogrid="0">
+            <control>
+              <ddsxmlobj>
+                <polyline endtypedst="6" endtypesrc="3" usercolor="16448250" linestyle="0" linerender="1" customendtypedstid="0" customendtypesrcid="0" adornsvisible="1" />
+              </ddsxmlobj>
+            </control>
+            <layoutobject>
+              <ddsxmlobj>
+                <property name="LogicalObject" value="dataSet.Relations[FK__Apartment__ID_en__725BF7F6]" vartype="8" />
+                <property name="Virtual" value="0" vartype="11" />
+                <property name="VisibleAP" value="0" vartype="3" />
+              </ddsxmlobj>
+            </layoutobject>
+            <connector lineroutestyle="MSDDS.Rectilinear" sourceid="1" destid="4" sourceattachpoint="13" destattachpoint="22" segmenteditmode="0" bendpointeditmode="0" bendpointvisibility="0" relatedid="0" virtual="0">
+              <point x="3299" y="8088" />
+              <point x="5699" y="8088" />
+            </connector>
+          </ddscontrol>
+        </dds>
+      </Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowRelationshipNames</Name>
+      <Value>false</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:UseDiagramDefaultLayout</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortLeft</Name>
+      <Value>-12117</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramViewPortTop</Name>
+      <Value>1386</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingLeft</Name>
+      <Value>20</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramBoundingTop</Name>
+      <Value>0</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramZoom</Name>
+      <Value>75</Value>
+    </Annotation>
+  </Annotations>
+  <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+  <State>Unprocessed</State>
+  <Dimensions>
+    <Dimension dwd:design-time-name="d523ad55-07ae-4e22-9c0b-5c31248e185e">
+      <ID>ID Start Date</ID>
+      <Name>ID Start Date</Name>
+      <DimensionID>Date Dim</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="8ed86197-d911-4eec-8dc3-abc8577db895">
+          <AttributeID>ID Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5245ead4-72cd-4c6b-9abf-76581806a1c8">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="571096fe-7513-4c42-b4e7-8b8c12b1655c">
+          <AttributeID>Month No</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="52c88a9a-dfbb-4eaa-88e3-53ce22bc53c7">
+          <AttributeID>Date Value</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="c551788a-7d33-4231-9230-3977352268ac">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="d4842c63-8884-4a50-9c07-83b70f25fd40">
+          <HierarchyID>Hierarchy 1</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="73927298-38f1-4102-ba16-9ed9a15a2cbb">
+          <HierarchyID>Hierarchy 2</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="74a2cbc8-41d9-46b9-b4b0-9098b17a8880">
+      <ID>ID Owner</ID>
+      <Name>ID Owner</Name>
+      <DimensionID>Person</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="4b48a5d8-3e48-4afe-8fa7-d23a8b537bbc">
+          <AttributeID>ID Person</AttributeID>
+          <AggregationUsage>None</AggregationUsage>
+        </Attribute>
+        <Attribute dwd:design-time-name="767d6ba3-f551-48f3-9461-88e9b6553454">
+          <AttributeID>PESEL</AttributeID>
+          <AggregationUsage>Full</AggregationUsage>
+        </Attribute>
+        <Attribute dwd:design-time-name="b522a27f-3e29-4fd9-9732-a8a93cf6b20c">
+          <AttributeID>Name And Surname</AttributeID>
+          <AggregationUsage>None</AggregationUsage>
+        </Attribute>
+        <Attribute dwd:design-time-name="5823103b-5a92-4ce7-9bc4-fc3d3c9ee765">
+          <AttributeID>Gender</AttributeID>
+          <AggregationUsage>None</AggregationUsage>
+        </Attribute>
+        <Attribute dwd:design-time-name="d951c02b-723b-4c2c-91eb-320dcf4ed3cb">
+          <AttributeID>Phone Number</AttributeID>
+          <AggregationUsage>None</AggregationUsage>
+        </Attribute>
+        <Attribute dwd:design-time-name="41a706f1-f1d7-4cbb-8e96-05f516b28486">
+          <AttributeID>Loyalty Category</AttributeID>
+          <AggregationUsage>None</AggregationUsage>
+        </Attribute>
+        <Attribute dwd:design-time-name="4048adf0-f55f-497b-bac2-53263d84cad1">
+          <AttributeID>ISCURRENT</AttributeID>
+          <AggregationUsage>None</AggregationUsage>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="c8919688-b895-4753-b9c9-64028d8c5b17">
+      <ID>ID Buyer</ID>
+      <Name>ID Buyer</Name>
+      <DimensionID>Person</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="d250dc87-486d-4757-8a3b-44bffbd186eb">
+          <AttributeID>ID Person</AttributeID>
+          <AggregationUsage>None</AggregationUsage>
+        </Attribute>
+        <Attribute dwd:design-time-name="759fcdaf-cbd4-4eb2-9fb1-6441e980c3f0">
+          <AttributeID>PESEL</AttributeID>
+          <AggregationUsage>Full</AggregationUsage>
+        </Attribute>
+        <Attribute dwd:design-time-name="b2b990ef-f2a5-4283-b6ac-a439fc03e8c4">
+          <AttributeID>Name And Surname</AttributeID>
+          <AggregationUsage>None</AggregationUsage>
+        </Attribute>
+        <Attribute dwd:design-time-name="4703ef98-29c7-43cb-912c-e6feef498e47">
+          <AttributeID>Gender</AttributeID>
+          <AggregationUsage>None</AggregationUsage>
+        </Attribute>
+        <Attribute dwd:design-time-name="f14d71e1-1eec-4019-bc03-05f04623b570">
+          <AttributeID>Phone Number</AttributeID>
+          <AggregationUsage>None</AggregationUsage>
+        </Attribute>
+        <Attribute dwd:design-time-name="2bb8e5c7-c2aa-45d3-a03d-62b9cda69e44">
+          <AttributeID>Loyalty Category</AttributeID>
+          <AggregationUsage>None</AggregationUsage>
+        </Attribute>
+        <Attribute dwd:design-time-name="96644ffd-d8f5-462f-903b-eb5d4b82cb30">
+          <AttributeID>ISCURRENT</AttributeID>
+          <AggregationUsage>None</AggregationUsage>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="de6eff8f-68c5-4d4d-a79c-c3a532e1ce9f">
+      <ID>Apartment</ID>
+      <Name>Apartment</Name>
+      <DimensionID>Apartment</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="f678f5a6-0368-4675-a060-b0e56f492bdb">
+          <AttributeID>ID Apartment</AttributeID>
+          <AggregationUsage>None</AggregationUsage>
+        </Attribute>
+        <Attribute dwd:design-time-name="574c22a9-eb67-4120-96dc-0794d71e444c">
+          <AttributeID>City</AttributeID>
+          <AggregationUsage>None</AggregationUsage>
+        </Attribute>
+        <Attribute dwd:design-time-name="efca7eb7-2910-40e9-b9df-980bdf1a419a">
+          <AttributeID>District</AttributeID>
+          <AggregationUsage>None</AggregationUsage>
+        </Attribute>
+        <Attribute dwd:design-time-name="f9f87cc5-f45f-4d89-8f5a-54e9ed82dfb5">
+          <AttributeID>Address</AttributeID>
+          <AggregationUsage>Full</AggregationUsage>
+        </Attribute>
+        <Attribute dwd:design-time-name="fd045d64-3eda-470c-9346-d8181d069f14">
+          <AttributeID>Postal Code</AttributeID>
+          <AggregationUsage>None</AggregationUsage>
+        </Attribute>
+        <Attribute dwd:design-time-name="56541cac-189d-45a5-addf-07b4128bce92">
+          <AttributeID>Size Category</AttributeID>
+          <AggregationUsage>None</AggregationUsage>
+        </Attribute>
+        <Attribute dwd:design-time-name="63910992-bff4-40c5-828a-4a62ce5b7227">
+          <AttributeID>Floor Number</AttributeID>
+          <AggregationUsage>None</AggregationUsage>
+        </Attribute>
+        <Attribute dwd:design-time-name="40b004ec-92b6-4850-ab5a-37a2c166ab7d">
+          <AttributeID>Number Of Rooms</AttributeID>
+          <AggregationUsage>None</AggregationUsage>
+        </Attribute>
+        <Attribute dwd:design-time-name="d4f76f69-e1c1-48f6-9201-2d4d051274c1">
+          <AttributeID>Decade Of Construction</AttributeID>
+          <AggregationUsage>None</AggregationUsage>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="45f4b0fd-7bb9-4fe9-927f-1e288a340b9d">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="92d4fe09-9175-464d-a852-a68802b3ba70">
+      <ID>Real Estate Agent</ID>
+      <Name>Real Estate Agent</Name>
+      <DimensionID>Real Estate Agent</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="a985cbfb-81eb-402f-b2e5-af93dcc563e7">
+          <AttributeID>ID Real Estate Agent</AttributeID>
+          <AggregationUsage>None</AggregationUsage>
+        </Attribute>
+        <Attribute dwd:design-time-name="9ab1a252-623d-4b93-ada2-af36a56141a1">
+          <AttributeID>ID Branch</AttributeID>
+          <AggregationUsage>None</AggregationUsage>
+        </Attribute>
+        <Attribute dwd:design-time-name="d28db949-ad8e-4670-b0d4-dacd9f40395f">
+          <AttributeID>PESEL</AttributeID>
+          <AggregationUsage>Full</AggregationUsage>
+        </Attribute>
+        <Attribute dwd:design-time-name="c0784f3c-32f2-4b40-846e-19a5369ac940">
+          <AttributeID>Name And Surname</AttributeID>
+          <AggregationUsage>None</AggregationUsage>
+        </Attribute>
+        <Attribute dwd:design-time-name="5a67e6cd-cebe-47d0-93ad-01e39b8562c9">
+          <AttributeID>Gender</AttributeID>
+          <AggregationUsage>None</AggregationUsage>
+        </Attribute>
+        <Attribute dwd:design-time-name="9cb4a7b1-de96-4863-805b-3eee1b1b3872">
+          <AttributeID>Seniority Category</AttributeID>
+          <AggregationUsage>None</AggregationUsage>
+        </Attribute>
+        <Attribute dwd:design-time-name="2b19fa05-68d0-492b-bcc9-9354a82b17fb">
+          <AttributeID>Email</AttributeID>
+          <AggregationUsage>None</AggregationUsage>
+        </Attribute>
+        <Attribute dwd:design-time-name="5d48892b-cf30-4704-99a2-1dff450b344c">
+          <AttributeID>Phone Number</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5679dd2d-a71c-4e87-ac1a-39dc491f48e1">
+          <AttributeID>ISCURRENT</AttributeID>
+          <AggregationUsage>None</AggregationUsage>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="487c232e-7aaf-4a57-92c4-fbef17a5b0f5">
+      <ID>ID For Sale Start Date</ID>
+      <Name>ID For Sale Start Date</Name>
+      <DimensionID>Date Dim</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="c4714472-f840-4acc-9218-4c404d0a8d79">
+          <AttributeID>ID Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a74e18e1-25bf-4b64-a861-fc30207ad9ac">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="83acfe92-b530-4afe-a49d-573edc9293b3">
+          <AttributeID>Month No</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cf2aec6c-c229-44cf-a23b-529fc05c6337">
+          <AttributeID>Date Value</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="0d1eb38f-6fa2-4134-be34-635291c342cd">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="efa7cb47-5303-4879-b44f-a3fff432854c">
+          <HierarchyID>Hierarchy 1</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="d2ced17f-871d-482e-9527-fa62d9451636">
+          <HierarchyID>Hierarchy 2</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="53974d26-8fee-430e-89aa-50b185afaf3f">
+      <ID>Junk Sale</ID>
+      <Name>Junk Sale</Name>
+      <DimensionID>Junk Sale</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="ecf7daba-5e3f-4ef8-8ef4-14775b42d367">
+          <AttributeID>ID Junk Sale</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ea2f6288-d51c-40e6-ac6b-cfb4cb5bc179">
+          <AttributeID>Status</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="18256d5c-ee51-41a9-8137-2d33f74d6301">
+          <AttributeID>Condition</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="cdb15206-67fb-482e-8505-844af254f83b">
+          <AttributeID>Agreement</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="a2b0645c-4685-4ea2-bae9-f4c13a3dcba4">
+      <ID>ID End Date</ID>
+      <Name>ID End Date</Name>
+      <DimensionID>Date Dim</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="c70fd425-397a-41e8-ab4c-9e522fdfad6f">
+          <AttributeID>ID Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8210352b-34e6-4c39-9fa2-9d4fb0067af9">
+          <AttributeID>Year</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="b6489ffa-407f-421c-b7ed-eae652006736">
+          <AttributeID>Month No</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7d75af75-af8a-4e84-9a77-b94560ef94cc">
+          <AttributeID>Date Value</AttributeID>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="6ec8933b-d61b-425c-b61b-545394d31eb0">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="582030b7-aae3-4513-bf01-3b8fee8377c1">
+          <HierarchyID>Hierarchy 1</HierarchyID>
+        </Hierarchy>
+        <Hierarchy dwd:design-time-name="77c75c37-940f-4dbd-90f5-ca0ec152a9b0">
+          <HierarchyID>Hierarchy 2</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="18c451d1-e0de-44a4-bb3c-9202fd2d0b65">
+      <ID>Junk Interest</ID>
+      <Name>Junk Interest</Name>
+      <DimensionID>Junk Interest</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="14e701ec-cfa5-4d96-8646-1063c43a65a9">
+          <AttributeID>ID Junk Interest</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="57c27be3-a486-4d17-ab3e-26e49f77279c">
+          <AttributeID>Status</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="9c9a77de-dbe0-4922-b4a2-bb7d3a767529">
+      <ID>Person</ID>
+      <Name>Potential Buyer</Name>
+      <DimensionID>Person</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="f55c06c4-1bf3-4e83-901a-05a2902c3d6c">
+          <AttributeID>ID Person</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="969df19e-5876-4106-a17f-d5747933bccb">
+          <AttributeID>PESEL</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="66d8b4f7-25a5-4571-8997-59de211fac39">
+          <AttributeID>Name And Surname</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a71f9192-3ee2-4552-9b71-7a18327ec38f">
+          <AttributeID>Gender</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="45caff9c-196f-4bd7-b41b-462b07d876cf">
+          <AttributeID>Phone Number</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7067ac08-b9a2-4431-b75d-deb0c8858874">
+          <AttributeID>Loyalty Category</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4e2b5543-96b9-40da-b7db-e2aa211fdc24">
+          <AttributeID>ISCURRENT</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="5e4475ee-c588-41cd-89be-aa3b2ba9d9b8">
+      <ID>Branch</ID>
+      <Name>Branch</Name>
+      <DimensionID>Branch</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="68869f5d-fd4f-46ec-8f72-f277c2e6e33b">
+          <AttributeID>ID Branch</AttributeID>
+          <AggregationUsage>None</AggregationUsage>
+        </Attribute>
+        <Attribute dwd:design-time-name="46b52d7f-0e69-4c16-80be-24e7e3ecd166">
+          <AttributeID>City</AttributeID>
+          <AggregationUsage>Full</AggregationUsage>
+        </Attribute>
+        <Attribute dwd:design-time-name="87e12bd4-1f56-4125-9a0d-36a5c4b57c0a">
+          <AttributeID>Address</AttributeID>
+          <AggregationUsage>None</AggregationUsage>
+        </Attribute>
+        <Attribute dwd:design-time-name="773ee9d9-0e5c-443e-b2bd-bbcb68c176dc">
+          <AttributeID>Postal Code</AttributeID>
+          <AggregationUsage>None</AggregationUsage>
+        </Attribute>
+        <Attribute dwd:design-time-name="f3b1c8f1-d619-434a-a37e-174f609ccc89">
+          <AttributeID>Number Of Agents</AttributeID>
+          <AggregationUsage>None</AggregationUsage>
+        </Attribute>
+        <Attribute dwd:design-time-name="b3ab5460-6dcd-4f1a-8ccd-49511d879cd5">
+          <AttributeID>Number Of Apartments</AttributeID>
+          <AggregationUsage>None</AggregationUsage>
+        </Attribute>
+        <Attribute dwd:design-time-name="ab7342cf-3387-4ce9-b1ed-c8f54277189c">
+          <AttributeID>ISCURRENT</AttributeID>
+          <AggregationUsage>None</AggregationUsage>
+        </Attribute>
+      </Attributes>
+      <Hierarchies>
+        <Hierarchy dwd:design-time-name="a5e180a7-ac33-4e69-8da1-8208274c68e9">
+          <HierarchyID>Hierarchy</HierarchyID>
+        </Hierarchy>
+      </Hierarchies>
+    </Dimension>
+    <Dimension dwd:design-time-name="5b4219e9-9648-459c-b12f-f1038456de8c">
+      <ID>AptSaleBridge</ID>
+      <Name>AptSaleBridge</Name>
+      <DimensionID>Apartment Sale</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="ee7cdfa8-6b49-4bb9-98d3-dd1eb75f3083">
+          <AttributeID>ID Owner</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f7874ffd-e8ba-4bbd-b7f6-e34b4f1de93f">
+          <AttributeID>ID Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8e68edd1-51c4-4765-b9e5-f154d09130ec">
+          <AttributeID>ID Apartment</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="662f245b-c392-4499-9f24-9432bc2e0d54">
+          <AttributeID>ID Person</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="aad0d7ea-d366-4c34-8b75-b90b295b73d0">
+          <AttributeID>ID Real Estate Agent</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1b4cdbaf-443d-4d67-82dd-aa6c524ab499">
+          <AttributeID>ID Branch</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e6d6030c-d3e7-42b7-86c3-ac4a6ed00a9e">
+          <AttributeID>ID Junk Sale</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="5989113d-f1ad-463b-acf3-e1db5c5336cd">
+      <ID>ID End Date 1</ID>
+      <Name>ID End Date 1</Name>
+      <DimensionID>Apartment Sale</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="4245762e-d9cf-4f04-9543-cc6cbaf036b8">
+          <AttributeID>ID Owner</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a2942aa4-9ed2-4cdf-828e-0e6e95580357">
+          <AttributeID>ID Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5530ace0-5528-465b-92d4-3b9afe81ca7a">
+          <AttributeID>ID Apartment</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8c9e354e-88f2-414a-b4d3-efcad76a2d08">
+          <AttributeID>ID Person</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4c51eb19-e77a-4fca-8cce-94a4f81af66a">
+          <AttributeID>ID Real Estate Agent</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="c028ca4d-3b0e-4d36-ae8d-d5e65d1590e7">
+          <AttributeID>ID Branch</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5f35dfcc-9f04-4a27-8bde-c7f2c0dcb6a1">
+          <AttributeID>ID Junk Sale</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="5c496eeb-caba-44c6-95dc-aeb9b72eab7e">
+      <ID>ID Apartment</ID>
+      <Name>ID Apartment</Name>
+      <DimensionID>Apartment Sale</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="f708f660-322e-4954-b890-9d250ec38c48">
+          <AttributeID>ID Owner</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="274d9ee7-19b2-472a-a45d-443f9b6e73fb">
+          <AttributeID>ID Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4edab20f-2b75-4db7-a06e-584dc5d9830d">
+          <AttributeID>ID Apartment</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="010c427d-7adc-4d1a-b867-1d6d1c7736c6">
+          <AttributeID>ID Person</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="545e6432-c6e3-4867-bb88-d6044e2ea8ae">
+          <AttributeID>ID Real Estate Agent</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="e7cdcc9f-9cce-4bb1-9674-df473bb243aa">
+          <AttributeID>ID Branch</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a68a8f68-a9a6-4f34-849a-39d1202b9347">
+          <AttributeID>ID Junk Sale</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="ee02937d-84aa-4ae4-87fd-255bae3a782a">
+      <ID>ID Start Date 1</ID>
+      <Name>ID Start Date 1</Name>
+      <DimensionID>Apartment Sale</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="c72b9f24-30be-430a-965e-bbc89c250cd4">
+          <AttributeID>ID Owner</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0582b48e-93dc-4240-8158-c4316f0f977d">
+          <AttributeID>ID Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="dc6ec5ca-e453-46c3-ba8c-0c5645d750bb">
+          <AttributeID>ID Apartment</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a63a1a93-8e37-4167-af4c-4899a74e9b48">
+          <AttributeID>ID Person</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="1cdad003-939e-40f2-9734-4a1fb86d0a6f">
+          <AttributeID>ID Real Estate Agent</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6974f3d0-9b35-466d-a1b4-23cd85ed2949">
+          <AttributeID>ID Branch</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="41401901-5e7b-46ee-af87-c7cc7adc6c4f">
+          <AttributeID>ID Junk Sale</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="08bd816e-1ae6-4d78-9755-ad21074bf8ff">
+      <ID>ID For Sale Start Date 1</ID>
+      <Name>ID For Sale Start Date 1</Name>
+      <DimensionID>Apartment Sale</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="aa32cf78-5006-498b-9dd1-92c8206c9f9a">
+          <AttributeID>ID Owner</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6d6e8fd1-3115-4257-93ce-14df595d031c">
+          <AttributeID>ID Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="16e7a20e-ea56-48f2-b68f-6c9e36a0e191">
+          <AttributeID>ID Apartment</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="8ca7ad0f-43e4-4008-a70d-7104c3723e9d">
+          <AttributeID>ID Person</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bb0f9fef-1d31-4be6-bcb6-7888aa67d65a">
+          <AttributeID>ID Real Estate Agent</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bc66a05c-ad99-45ae-ba0f-94da452da1fe">
+          <AttributeID>ID Branch</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="edd039bc-3dc2-4946-a75c-dcd75a6dbb0c">
+          <AttributeID>ID Junk Sale</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="a27708bc-8963-4a75-8843-8cdf0c77c376">
+      <ID>ID Real Estate Agent</ID>
+      <Name>ID Real Estate Agent</Name>
+      <DimensionID>Apartment Sale</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="912ea816-f3d9-4f26-9bd1-cc1ac5eed65e">
+          <AttributeID>ID Owner</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="316ed8ce-4877-45ef-b0d8-72a72bc90104">
+          <AttributeID>ID Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="21895be1-d99b-4740-9d29-3f6d00bffcbe">
+          <AttributeID>ID Apartment</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="4c22b53c-2e4e-47e1-a92a-9ff982b89e2d">
+          <AttributeID>ID Person</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="54d921c1-fc0f-45f6-b383-b1d754c0dee1">
+          <AttributeID>ID Real Estate Agent</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="5d9eece7-f5cb-42ab-8784-e35983a9cbfe">
+          <AttributeID>ID Branch</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="16087e76-ace3-4ef8-aeb7-832257b2c489">
+          <AttributeID>ID Junk Sale</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="05e9ad38-3da1-4944-9d57-1fc8841e1d67">
+      <ID>ID Junk Sale</ID>
+      <Name>ID Junk Sale</Name>
+      <DimensionID>Apartment Sale</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="2b80d8d2-6a5e-465b-a087-b0c8aa5948c0">
+          <AttributeID>ID Owner</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f3095e65-2df5-499a-8a7f-827d0c57f1e3">
+          <AttributeID>ID Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f509215e-30d2-4f9a-998f-577b00b793ac">
+          <AttributeID>ID Apartment</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f068eccc-06e3-49bc-b4e2-820ee894645e">
+          <AttributeID>ID Person</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="43933ca0-5ffb-4b64-a940-bb43d730c230">
+          <AttributeID>ID Real Estate Agent</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="91e43280-b60e-41f6-9c21-fdc3ae0ee0aa">
+          <AttributeID>ID Branch</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="3d3fd338-d47a-4096-a823-6b1ae3fc7e09">
+          <AttributeID>ID Junk Sale</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="0d4efda6-443a-404a-8c79-08ca55a466f0">
+      <ID>ID Buyer 1</ID>
+      <Name>ID Buyer 1</Name>
+      <DimensionID>Apartment Sale</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="3a8b47c2-9475-4bd2-b0d0-a1be064f7d7b">
+          <AttributeID>ID Owner</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="53b619b3-d728-41e3-a2ec-605b509c5e09">
+          <AttributeID>ID Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="6b2bb039-7456-4cd2-8257-65bfe7547219">
+          <AttributeID>ID Apartment</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="bee0a8db-f1b5-4741-bf40-d0781c25d04d">
+          <AttributeID>ID Person</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="440e65c1-0a1c-4d24-b0c8-8b16c9156b71">
+          <AttributeID>ID Real Estate Agent</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="29045380-8c04-41e6-a413-9e25ab0b122d">
+          <AttributeID>ID Branch</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="a4da9c8c-f596-45f3-8a10-b325c76fab28">
+          <AttributeID>ID Junk Sale</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+    <Dimension dwd:design-time-name="6c0d0dc0-9dc9-4200-a3ab-91522a363428">
+      <ID>ID Potential Buyer</ID>
+      <Name>ID Potential Buyer</Name>
+      <DimensionID>Apartment Sale</DimensionID>
+      <Attributes>
+        <Attribute dwd:design-time-name="55d1d5cc-d5c5-43dd-a6bb-72156bdc507b">
+          <AttributeID>ID Owner</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="f82aaf72-edb4-49f5-b7b1-ff5514919de9">
+          <AttributeID>ID Date</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="7c456297-7726-4261-b4b6-13e6c0bce73a">
+          <AttributeID>ID Apartment</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="ea96a759-f8b8-4914-9e88-5f99cf1f96bf">
+          <AttributeID>ID Person</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="533d4463-4b28-4b22-b075-3450f4c4e460">
+          <AttributeID>ID Real Estate Agent</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="0f752523-6270-4362-86f9-2a36d7252258">
+          <AttributeID>ID Branch</AttributeID>
+        </Attribute>
+        <Attribute dwd:design-time-name="407f3164-c115-47ed-8c8c-a0c42101e448">
+          <AttributeID>ID Junk Sale</AttributeID>
+        </Attribute>
+      </Attributes>
+    </Dimension>
+  </Dimensions>
+  <MeasureGroups>
+    <MeasureGroup dwd:design-time-name="88deaf9b-c23b-4faf-8d93-44c29237422f">
+      <ID>Apartment Sale</ID>
+      <Name>Apartment Sale</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="fb763597-6bd4-475b-b585-a8f0aa5a708d">
+          <ID>Final Price</ID>
+          <Name>Final Price</Name>
+          <Source dwd:design-time-name="2c63fd34-131c-4a69-bd76-cd3603303bdd">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="f60cc73d-7ff0-4a32-8151-83f5355642ca">
+              <TableID>dbo_Apartment_Sale</TableID>
+              <ColumnID>FinalPrice</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="20726d8d-0fad-4c1c-b2e6-5add718b3a0f">
+          <ID>Listing Price</ID>
+          <Name>Listing Price</Name>
+          <Source dwd:design-time-name="22ce7b89-e7c0-4e7f-9a89-144c5f8917ff">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="a6afa4a2-460f-4e40-9bd6-139bfcd767d0">
+              <TableID>dbo_Apartment_Sale</TableID>
+              <ColumnID>ListingPrice</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="518bc524-d767-4d03-872e-a3d996794640">
+          <ID>Commission Rate</ID>
+          <Name>Commission Rate</Name>
+          <Source dwd:design-time-name="b340420f-570f-47ce-a778-9b8adb4f5dd2">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="6b765a9e-b679-4dea-857d-19b5819ceb3d">
+              <TableID>dbo_Apartment_Sale</TableID>
+              <ColumnID>CommissionRate</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="30af12c1-b507-41f4-9707-57f4c53dd0e0">
+          <ID>Profit</ID>
+          <Name>Profit</Name>
+          <Source dwd:design-time-name="72791247-e419-4b13-97b0-7b3bd12f79ce">
+            <DataType>Double</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="68ef0775-c148-426c-b92e-05d2cbe4c367">
+              <TableID>dbo_Apartment_Sale</TableID>
+              <ColumnID>Profit</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="12c2ae18-8099-4fa5-a9fd-c2efe6d60701">
+          <ID>Days On Market</ID>
+          <Name>Days On Market</Name>
+          <Source dwd:design-time-name="a1989f01-5b09-4f35-b873-c9e18284ca77">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="517e2c15-3a31-4839-89e0-7b61c84f7142">
+              <TableID>dbo_Apartment_Sale</TableID>
+              <ColumnID>DaysOnMarket</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="80e732c5-ce2f-4615-a2cc-ad3be841a3d2">
+          <ID>Apartment Sale Count</ID>
+          <Name>Apartment Sale Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="7627723c-6ca0-4dae-9683-65d069a34284">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="b43fa0a8-81c1-4546-a9fe-63fde02a6616">
+              <TableID>dbo_Apartment_Sale</TableID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="c0966136-8854-48dc-96e2-dea6ec6221f6">
+          <ID>Final Price - Apartment Sale</ID>
+          <Name>Number of Apartments</Name>
+          <AggregateFunction>DistinctCount</AggregateFunction>
+          <Source dwd:design-time-name="fabfc074-06ef-4447-97b3-64347d5700b0">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="fa40b73e-7e2c-419e-a461-d1018962b56a">
+              <TableID>dbo_Apartment</TableID>
+              <ColumnID>ID_apartment</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Rolap</StorageMode>
+      <EstimatedRows>13015</EstimatedRows>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="cdbec830-11e1-49ae-95e9-b6ab40f4ee62">
+          <CubeDimensionID>ID Start Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e439a495-a5f5-4b20-8e80-5fd9f0edf46f">
+              <AttributeID>ID Date</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="2cc8470c-c42e-4219-9690-6bdb64d0e541">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f0dd0659-ff1f-45f2-8a61-bf8c6735c538">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_start_date</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="583ed0ee-f6c0-4da7-bf58-7aa01c8c9b92">
+          <CubeDimensionID>ID Owner</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="9ba37f65-114b-4c76-b8c1-8190696bdc30">
+              <AttributeID>ID Person</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="17ad5dea-146a-441d-b236-55565f8409da">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c57ec157-d18a-4c09-9305-e0164d47f00f">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_owner</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ac2c75fd-1b76-4b81-ab1a-ae7900f7707e">
+          <CubeDimensionID>ID Buyer</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="330875c6-154f-490c-85e2-7a7d71701038">
+              <AttributeID>ID Person</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="59f71470-26eb-4079-915c-04e1070df12a">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="62331278-0d65-4435-8791-00ec6e57eca2">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_buyer</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ecdf2a33-4c16-45dc-81b9-42dc51ad4902">
+          <CubeDimensionID>Apartment</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="51b54f04-2a93-47db-bf89-ec3d074c90c0">
+              <AttributeID>ID Apartment</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="43f96851-cc3f-4ca0-b252-14c80f714056">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="80e196c1-ac35-4b89-9419-dab541595008">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_apartment</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="eac28b10-fce8-4f33-a574-59ac3f01cb98">
+          <CubeDimensionID>Real Estate Agent</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="bb28ff32-ccdd-4fa5-a069-a9ce1ca93ffd">
+              <AttributeID>ID Real Estate Agent</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="37070f7b-a002-46c6-9aba-fb576ac2b6b9">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="39c8a501-3b9d-4247-b943-bc0108684bca">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_real_estate_agent</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="a1e18bd3-0fcf-4792-b2f1-1104c5d0d6a9">
+          <CubeDimensionID>ID For Sale Start Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c3862c44-ed9f-4ddb-a62c-444d85d570e4">
+              <AttributeID>ID Date</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="eb00c6e0-4ad7-477c-85ea-8ae5984e5e1c">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="a41fbc6e-0129-40e8-bf9f-e7daee42805a">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_for_sale_start_date</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="16d5be41-e9f8-4bd8-acb3-dd6d7e6d604d">
+          <CubeDimensionID>Junk Sale</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="11db68f5-a27b-4013-aaa8-bef3cb108bb2">
+              <AttributeID>ID Junk Sale</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="8825486f-617f-4d48-836f-5a4da183ae7a">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5bb963ba-5f31-4c05-9ec0-7da4b02c35b0">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_junk_sale</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="ed898632-fa90-4d84-96b4-4e98544482d5">
+          <CubeDimensionID>ID End Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="b316b828-562f-4d8d-8970-9af9088a4e73">
+              <AttributeID>ID Date</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="325c2550-2c1f-4f39-9dc2-dd80fce6f454">
+                  <DataType>Integer</DataType>
+                  <NullProcessing>UnknownMember</NullProcessing>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6c795ea0-5870-47f8-be58-cf59e4bb6d0b">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_end_date</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="27aca046-0271-4382-80e4-446a15c1b494">
+          <CubeDimensionID>Branch</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e1eed955-e9f1-4d3b-8236-cc7ed2ea70bd">
+              <AttributeID>ID Branch</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>Real Estate Agent</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>ID Branch</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="3133898d-cf12-4d1c-85d5-43af8274cc5e">
+          <CubeDimensionID>AptSaleBridge</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4993ad12-721e-4fbc-b47f-f41677ebb9f3">
+              <AttributeID>ID Owner</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="62270586-5ce2-46bc-ad37-03f219bf1fce">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ff96d1bf-cf86-431c-87df-69408e34171f">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_owner</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="34e88b94-d5bd-4070-839f-9f1dc66f8fa4">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6bda1409-70a5-4919-aa52-56171abd0cb9">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_apartment</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="520bdcd8-c9b2-416c-b894-8f08840e9c82">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d947b660-8e37-43d2-8f3d-206ef31a5514">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_real_estate_agent</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="48de175e-a234-4924-87f6-abca0befe02d">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="211e04e7-a53b-4b3a-805d-16b45013d829">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_start_date</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="28b83a30-1b65-4330-a43b-a24d83c3c772">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ab56e922-e4f2-4d84-993f-e695fcbb05c5">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_junk_sale</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="98b02fd9-f07a-42f9-bc84-791413797fe6">
+          <CubeDimensionID>ID End Date 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="d9a5afd6-b6bc-423a-b833-0383b5bfaeb8">
+              <AttributeID>ID Owner</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a8cbb478-9930-4582-b483-3bccbae7f3ee">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c9109a91-bf29-47ae-b8e3-32ee9f9ccce8">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_owner</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="e01fd0b8-15d6-4c32-99cc-b9d31be2537b">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="901a1553-0787-4451-ba6a-cc03a4e8a8ad">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_apartment</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="57d9bfb4-c964-4ac3-8755-44a59407fe4e">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="7a5672b2-80ad-48a3-a48f-822ccc2d422e">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_real_estate_agent</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="bac952a7-44c8-4955-82cf-ec4d092808ad">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e4538798-4f14-4c50-b2de-d73559e03c14">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_start_date</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="8ed5cf3f-c81a-41d8-96ed-168b2ac39bbf">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="486b4bd0-6201-4f0d-872b-d89dcc8bc119">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_junk_sale</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="0dc0f9f6-4796-4e5a-83ce-bc57578dd4fc">
+          <CubeDimensionID>ID Apartment</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="3b5fdabd-42d2-4acd-a9e0-b2d80aefb629">
+              <AttributeID>ID Owner</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="bb0a8461-56ef-4c22-ba09-5b1f659687af">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3188cbcb-29bd-4dd4-9bfb-b6747d7db009">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_owner</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="9971d5a1-b03c-499f-9bf1-994e71e84427">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="1d45a3a9-bb48-4348-9a7f-2e49c7b52cb6">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_apartment</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="37d69b8f-8b82-4b74-941c-894e83bd5c34">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3014f1a7-e0af-433e-be36-78717f1b19c6">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_real_estate_agent</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="853e401b-f58f-46b3-a8af-982e87722187">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="57f20a21-6dc0-48d4-addb-c81bac3406a3">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_start_date</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="db97951b-6495-447d-b138-5631c30bdd92">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="b82f82e5-efa0-4940-9046-b7526c432a39">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_junk_sale</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="79655954-a720-46c1-9d61-706dd722993c">
+          <CubeDimensionID>ID Start Date 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="173641d0-b8c0-45ce-9139-bae126048642">
+              <AttributeID>ID Owner</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="773ddd3c-3d88-416d-aaab-4a0cbbf4e767">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="0ad03a97-5fa5-48db-bb4a-bc71c8aecef7">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_owner</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="54882a79-3455-4780-9a9f-4320b1bb977c">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ba76543e-0a79-44b4-9d7b-08b1e63befae">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_apartment</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="7043ae6d-2586-46fc-80eb-63916b7b2176">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="940e1441-28ae-42e8-8377-01b9514d54cd">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_real_estate_agent</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="1955b444-d280-4b6e-9a4f-96cb2d42ee0d">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="022a4c4d-daad-4423-aad5-adb7d5f4fb51">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_start_date</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="cbbd1577-8251-4dac-b916-18b4cc089131">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="550419f8-4ad7-4154-9da2-72338ebbaa5d">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_junk_sale</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="c11e7849-468a-4eb2-8aaf-65ab50b6e41e">
+          <CubeDimensionID>ID For Sale Start Date 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c6e323a1-b032-4cab-bd95-57006cb2c525">
+              <AttributeID>ID Owner</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="a2067149-53a0-4ed4-87ad-21d044c684b6">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9ade73d1-beb4-49f5-ac93-9d0d0f0b0262">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_owner</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="dacb0b60-7649-49da-8be0-53d60149b94f">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5ce38747-f713-415e-9208-149d313d3629">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_apartment</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="2566b53b-97d0-4b9d-b30f-0929a8e2e2ae">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="bcd32d49-611a-423f-af5a-90f7df3c4069">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_real_estate_agent</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="eda2bac2-625c-4018-8bf8-087ff75af231">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f231d4db-e9dd-421a-a3ec-84aad3e9fecc">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_start_date</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="2e473ac6-250e-4ed7-bed7-3f336692c4e5">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="d5e7958e-8044-4839-8582-cb083f48632c">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_junk_sale</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="a320fbfc-2ecd-47bf-8800-510e312f4072">
+          <CubeDimensionID>ID Real Estate Agent</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4812ac8c-65c9-4689-a7d6-937213b9a661">
+              <AttributeID>ID Owner</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1970067f-0534-472f-942f-0d7ed550dfb8">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e4354264-9507-468f-a4d9-fda883d9023f">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_owner</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="49a879c1-5d1c-4975-8015-3cf5f9ae264d">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="fed16828-d181-46ea-b0ff-ffb60d1fd2b2">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_apartment</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="d9038703-34a2-47e3-93d4-b759bf5ad8a0">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="bc10f62b-eed9-48bd-bf41-5c01e7309bdb">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_real_estate_agent</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="88bcd710-1237-4d37-a630-da9b7b2ac8c2">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2241f0c9-a260-46db-9b3f-eb1ec4201c1d">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_start_date</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="804353b0-5486-48c0-addc-d45bc41bc8f1">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="3dbc887c-4d0b-4377-b7bb-6e5c44e6935f">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_junk_sale</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="3fe8abd7-f1ce-43c7-b5c4-e0c95ca0e90f">
+          <CubeDimensionID>ID Junk Sale</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="60df0d0d-cc54-4abf-933b-2f199d07ac4d">
+              <AttributeID>ID Owner</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="8d62281f-24f6-4938-ad27-48b4f8da5611">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c6152d52-ed5b-4b8c-9ab0-c6d4f0625272">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_owner</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="e07bd16e-2615-469d-a434-efe91336bf0b">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4eb5794b-1eb4-485f-80f6-3bec6c2d1f16">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_apartment</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="4ac298d0-bb84-4647-a378-c713dad85d45">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="578949e1-5649-44a1-8112-b9ec7af93a7f">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_real_estate_agent</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="e5d77c52-88a6-4702-9efc-7997483879f9">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ea50e450-5a13-4384-944b-5d2155cb705e">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_start_date</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="408c8fa6-e2b6-4a49-933d-1799e2ec373e">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="80ee3e71-0fee-40b4-9c4f-ef0fb5b5b9ab">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_junk_sale</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="f86e06af-52cf-4d5e-b20a-c5f3459877a1">
+          <CubeDimensionID>ID Buyer 1</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="dab24eff-10f8-4f35-a8ab-38505d091c69">
+              <AttributeID>ID Owner</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="705c46d8-c254-44d3-b3ab-b55ddf228565">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="33349e42-afa6-4724-8763-eaeca2a4e4c0">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_owner</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="759d62e1-2f34-40cd-bb60-559db96b4552">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5e8094ff-2bfa-4346-8b7a-90b66d24baf4">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_apartment</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="c41a2da5-a6cf-4dd0-86be-209ed426f310">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="36bc2975-3977-4f80-935c-90fddee31555">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_real_estate_agent</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="8ecdd35e-284b-4434-9df6-857c4ad7e596">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="9fd1e96f-c20d-4294-849c-3d5cd8f6b4de">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_start_date</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="782f34e1-9393-43d1-b143-263ae10043ac">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="428a9b39-6dbf-4015-833d-036c0d388e4b">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_junk_sale</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="DegenerateMeasureGroupDimension" dwd:design-time-name="4616871a-fcd3-44c4-b757-f5ded4ac0b2b">
+          <CubeDimensionID>ID Potential Buyer</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="e26215d2-d447-4f27-9a46-3a2f2af3442b">
+              <AttributeID>ID Owner</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1c28306f-0bcb-4f2b-b463-5e3af6992315">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="c9fee5ab-2975-4e72-93bd-2e486ea1d74b">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_owner</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="1c727fec-0df9-4946-9ed6-9b28b7ca331d">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="5d54357f-ffc3-4c17-921b-291b10f92d62">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_apartment</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="ec076275-2177-45e3-8a6b-078d457447c0">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="65be1157-28b6-491f-a4c9-991a3e44493d">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_real_estate_agent</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="1cdd573b-acc1-4be0-80bb-e2c79740d614">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="6f57bbf2-66dc-4836-bcd3-aaa4bb17e10c">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_start_date</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="5a49f2c0-fd6e-4c63-9925-6b747b11e9ac">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="48117454-54cb-4c95-bb7f-69aedb9dbec5">
+                    <TableID>dbo_Apartment_Sale</TableID>
+                    <ColumnID>ID_junk_sale</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+      <AggregationDesigns />
+      <ProactiveCaching dwd:design-time-name="016830f4-96b9-49fb-b2c1-f310706a8edf">
+        <SilenceInterval>-PT1S</SilenceInterval>
+        <Latency>PT0S</Latency>
+        <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+        <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+        <Enabled>true</Enabled>
+        <AggregationStorage>MolapOnly</AggregationStorage>
+        <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="26fc6fa9-50fe-4c91-9f56-4f86f78f99dd">
+          <NotificationTechnique>Server</NotificationTechnique>
+        </Source>
+      </ProactiveCaching>
+    </MeasureGroup>
+    <MeasureGroup dwd:design-time-name="221338cb-a604-4284-b1db-3ed89e329a26">
+      <ID>Interest</ID>
+      <Name>Interest</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+      <State>Unprocessed</State>
+      <Measures>
+        <Measure dwd:design-time-name="a699c66e-6183-40bc-a68c-7ba3374490c6">
+          <ID>Interest Count</ID>
+          <Name>Interest Count</Name>
+          <AggregateFunction>Count</AggregateFunction>
+          <Source dwd:design-time-name="5cde709d-c786-4c95-9e3e-893c8d8696f2">
+            <DataType>Integer</DataType>
+            <DataSize>4</DataSize>
+            <Source xsi:type="RowBinding" dwd:design-time-name="bfda4391-683c-4310-8331-79297fc48329">
+              <TableID>dbo_Interest</TableID>
+            </Source>
+          </Source>
+        </Measure>
+        <Measure dwd:design-time-name="188a6074-46a6-428d-b879-a9f7641a7b29">
+          <ID>ID Apartment 1</ID>
+          <Name>Number of Potential Buyer</Name>
+          <AggregateFunction>DistinctCount</AggregateFunction>
+          <Source dwd:design-time-name="97c9acf5-941d-4e99-a98e-27a19342b91c">
+            <DataType>Integer</DataType>
+            <Source xsi:type="ColumnBinding" dwd:design-time-name="1e1bfa10-f37b-4232-a12b-0a98a17f33ea">
+              <TableID>dbo_Interest</TableID>
+              <ColumnID>ID_potential_buyer</ColumnID>
+            </Source>
+          </Source>
+        </Measure>
+      </Measures>
+      <StorageMode>Rolap</StorageMode>
+      <EstimatedRows>14869</EstimatedRows>
+      <ProcessingMode>Regular</ProcessingMode>
+      <Dimensions>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="6ecb726a-b75a-46da-a5ba-8044ced1296d">
+          <CubeDimensionID>Junk Interest</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="63b08907-6742-4484-bb75-4653f6f94fb1">
+              <AttributeID>ID Junk Interest</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="c63fe167-8dd3-46a7-b655-af187b8249e1">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="792db06c-e568-455c-b209-409272c8c6c7">
+                    <TableID>dbo_Interest</TableID>
+                    <ColumnID>ID_junk_interest</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="1b1c6b03-9aff-41e9-a6a2-37da0c4f44ff">
+          <CubeDimensionID>Person</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="c1c4313c-2950-426b-ad8d-ceff409bb7d2">
+              <AttributeID>ID Person</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="318fc6b7-bc92-44c4-b760-29ba8fe8e5cb">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="ca777cba-3353-405d-83f7-fa175276164c">
+                    <TableID>dbo_Interest</TableID>
+                    <ColumnID>ID_potential_buyer</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="af3c5852-c6d1-4d92-8de0-0e349fb03343">
+          <CubeDimensionID>ID Potential Buyer</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="81601574-c5fd-4bb5-a07e-fdee928b6618">
+              <AttributeID>ID Person</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="5a1ee7d9-0a7b-4444-9f39-c2cdf6f0c72b">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="f2c9d201-d5c3-403b-90cd-66babf6f9129">
+                    <TableID>dbo_Interest</TableID>
+                    <ColumnID>ID_potential_buyer</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="RegularMeasureGroupDimension" dwd:design-time-name="15bd1969-bdfe-41a6-95ff-687c44e9b486">
+          <CubeDimensionID>AptSaleBridge</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4f9f3939-1f4c-4a48-8a57-a238780efbea">
+              <AttributeID>ID Owner</AttributeID>
+              <KeyColumns>
+                <KeyColumn dwd:design-time-name="1dd23b14-846c-483b-909d-1f15d76981ce">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="4251f823-fc27-4528-adce-e0a1f2e550ab">
+                    <TableID>dbo_Interest</TableID>
+                    <ColumnID>ID_owner</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="a8be94d6-24d3-476c-a12c-d4ebc346d6ec">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="62daffa4-a6a6-4ff1-875f-816b9cb67055">
+                    <TableID>dbo_Interest</TableID>
+                    <ColumnID>ID_apartment</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="47744407-2b87-46fc-9066-f991e3eb63f3">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="2bd8e220-7a23-4489-b1de-da3a74b8f913">
+                    <TableID>dbo_Interest</TableID>
+                    <ColumnID>ID_real_estate_agent</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="5df35e27-17a0-47d8-acca-73fc3bfa06b6">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="e4ba90ba-e3d9-4e79-95a7-0e36e6e1a60a">
+                    <TableID>dbo_Interest</TableID>
+                    <ColumnID>ID_start_date</ColumnID>
+                  </Source>
+                </KeyColumn>
+                <KeyColumn dwd:design-time-name="89a82a2e-7dcc-49af-8c5f-bce774682dc5">
+                  <DataType>Integer</DataType>
+                  <Source xsi:type="ColumnBinding" dwd:design-time-name="80bea948-d8a7-4d8f-9cde-152b96a11b4e">
+                    <TableID>dbo_Interest</TableID>
+                    <ColumnID>ID_junk_sale</ColumnID>
+                  </Source>
+                </KeyColumn>
+              </KeyColumns>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="7e326ac3-ef84-4c51-9f06-0d0bcad99d3e">
+          <CubeDimensionID>ID Start Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="6d85a837-0719-4421-a69e-3a7a66cb5758">
+              <AttributeID>ID Date</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>AptSaleBridge</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>ID Date</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="4b1d137b-e8bb-453f-91f1-ad14d061cb75">
+          <CubeDimensionID>ID Owner</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="afa09a5f-cf2f-418a-92c9-b108c3483b3a">
+              <AttributeID>ID Person</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>AptSaleBridge</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>ID Person</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="53d67f36-6a76-42bc-b127-19530ac6ae77">
+          <CubeDimensionID>ID Buyer</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="29c15387-3a34-42ac-95ef-a54f9bfa054a">
+              <AttributeID>ID Person</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>AptSaleBridge</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>ID Person</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="a1cdd2a4-e462-434c-abed-81a60054c743">
+          <CubeDimensionID>Apartment</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="adc4b66e-ff75-4ec4-8eaa-6a2ee8e05554">
+              <AttributeID>ID Apartment</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>AptSaleBridge</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>ID Apartment</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="3aa7ae1b-f644-4fa2-85c4-c6d5c3bbd56a">
+          <CubeDimensionID>Real Estate Agent</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="cd1a9e82-1724-4c6e-aa20-f5c2d836deed">
+              <AttributeID>ID Real Estate Agent</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>AptSaleBridge</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>ID Real Estate Agent</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="8d22d2e3-cf23-44f2-bf21-1236d8f2b3c4">
+          <CubeDimensionID>ID For Sale Start Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="4f04442f-c120-43e9-9e36-b181023ecbbf">
+              <AttributeID>ID Date</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>AptSaleBridge</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>ID Date</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="5a7c582e-8ca9-4ff8-bdf3-1310e7fcbce3">
+          <CubeDimensionID>Junk Sale</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="15512e6a-f72d-4ea7-80d5-74a7d23edd5c">
+              <AttributeID>ID Junk Sale</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>AptSaleBridge</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>ID Junk Sale</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="cc4ab34c-ebc8-458b-a8c0-be96261c1c41">
+          <CubeDimensionID>ID End Date</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="2a01a897-2638-4889-a17a-8372673f8ac4">
+              <AttributeID>ID Date</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>AptSaleBridge</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>ID Date</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+        <Dimension xsi:type="ReferenceMeasureGroupDimension" dwd:design-time-name="dc24d905-cf8b-4114-a520-0439ba563482">
+          <CubeDimensionID>Branch</CubeDimensionID>
+          <Attributes>
+            <Attribute dwd:design-time-name="83cfb09f-74d7-4a3b-a912-70b9d0b0f59a">
+              <AttributeID>ID Branch</AttributeID>
+              <Type>Granularity</Type>
+            </Attribute>
+          </Attributes>
+          <IntermediateCubeDimensionID>AptSaleBridge</IntermediateCubeDimensionID>
+          <IntermediateGranularityAttributeID>ID Branch</IntermediateGranularityAttributeID>
+          <Materialization>Regular</Materialization>
+          <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
+        </Dimension>
+      </Dimensions>
+      <Partitions />
+      <ProactiveCaching dwd:design-time-name="a1876a60-e6ae-4d9c-8c35-761495ff5283">
+        <SilenceInterval>-PT1S</SilenceInterval>
+        <Latency>PT0S</Latency>
+        <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+        <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+        <Enabled>true</Enabled>
+        <AggregationStorage>MolapOnly</AggregationStorage>
+        <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="5ea0ad4c-940b-4d03-8740-25feb38c7820">
+          <NotificationTechnique>Server</NotificationTechnique>
+        </Source>
+      </ProactiveCaching>
+    </MeasureGroup>
+  </MeasureGroups>
+  <Source dwd:design-time-name="8cc6b67c-7484-434e-9427-b6ba5ef14486">
+    <DataSourceViewID>Propertymaster DW</DataSourceViewID>
+  </Source>
+  <MdxScripts>
+    <MdxScript dwd:design-time-name="c5e15eba-9976-42b7-9f75-4d60f215df5c">
+      <ID>MdxScript</ID>
+      <Name>MdxScript</Name>
+      <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+      <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+      <Commands>
+        <Command>
+          <Text>/*
+The CALCULATE command controls the aggregation of leaf cells in the cube.
+If the CALCULATE command is deleted or modified, the data within the cube is affected.
+You should edit this command only if you manually specify how the cube is aggregated.
+*/
+CALCULATE;        
+CREATE MEMBER CURRENTCUBE.[Measures].AverageListingPrice
+ AS [Measures].[Listing Price] / [Measures].[Apartment Sale Count], 
+VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = 'Apartment Sale'  ;        
+CREATE MEMBER CURRENTCUBE.[Measures].AverageFinalPrice
+ AS [Measures].[Final Price] / [Measures].[Apartment Sale Count], 
+VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = 'Apartment Sale';        
+CREATE MEMBER CURRENTCUBE.[Measures].AverageCommissionRate
+ AS [Measures].[Commission Rate] / [Measures].[Apartment Sale Count], 
+VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = 'Apartment Sale';        
+CREATE MEMBER CURRENTCUBE.[Measures].PriceFlutuation
+ AS IIF(
+    [Measures].[AverageListingPrice] = 0 OR IsEmpty([Measures].[AverageListingPrice]),
+    NULL,
+    [Measures].[AverageFinalPrice] / [Measures].[AverageListingPrice]
+), 
+VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = 'Apartment Sale'  ;        
+CREATE MEMBER CURRENTCUBE.[Measures].AverageSaleSpeed
+ AS [Measures].[Days on Market] / [Measures].[Number of Apartments], 
+VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = 'Apartment Sale';        
+CREATE MEMBER CURRENTCUBE.[Measures].AveragePotentialBuyersPerApt
+ AS [Measures].[Number of Potential Buyer] /[Measures].[Number of Apartments], 
+VISIBLE = 1 ,  ASSOCIATED_MEASURE_GROUP = 'Interest'; </Text>
+        </Command>
+      </Commands>
+    </MdxScript>
+  </MdxScripts>
+  <Kpis>
+    <Kpi dwd:design-time-name="941520e7-778e-4025-87c8-0ec194d58dcf">
+      <ID>KPI</ID>
+      <Name>Average Sale Speed</Name>
+      <AssociatedMeasureGroupID>Apartment Sale</AssociatedMeasureGroupID>
+      <Value>[Measures].[AverageSaleSpeed]</Value>
+      <Goal>( KPIValue( "Average Sale Speed" ), ParallelPeriod ( [ID End Date].[EndDateHierarchy].[Year], 1, [ID End Date].[EndDateHierarchy].CurrentMember ) ) * 0.85</Goal>
+      <Status>IIf (KPIValue( "Average Sale Speed" ) &lt; KPIGoal("Average Sale Speed"), 1, -1)</Status>
+      <Trend>IIf (KPIValue( "Average Sale Speed" ) &lt; (KPIValue( "Average Sale Speed" ), ParallelPeriod([ID End Date].[EndDateHierarchy].[Year], 1, [ID End Date].[EndDateHierarchy].CurrentMember)), 1, -1)</Trend>
+      <TrendGraphic>Status Arrow - Ascending</TrendGraphic>
+      <StatusGraphic>Gauge - Ascending</StatusGraphic>
+    </Kpi>
+    <Kpi dwd:design-time-name="c7fd1894-f18a-430a-bd30-1436cc54351b">
+      <ID>KPI 1</ID>
+      <Name>Number of Potential Buyers</Name>
+      <AssociatedMeasureGroupID>Interest</AssociatedMeasureGroupID>
+      <Value>[Measures].[Number of Potential Buyer]</Value>
+      <Goal>( KPIValue( "Number of Potential Buyers" ), ParallelPeriod ( [ID For Sale Start Date].[SaleStartDateHierarchy].[Month No], 1,  [ID For Sale Start Date].[SaleStartDateHierarchy].CurrentMember)) * 1.05
+</Goal>
+      <Status>IIf (KPIValue( "Number of Potential Buyers" ) &gt; KPIGoal("Number of Potential Buyers"), 1, -1)
+</Status>
+      <Trend>IIf ( KPIValue( "Number of Potential Buyers") &gt; ( KPIValue( "Number of Potential Buyers" ), ParallelPeriod ( [ID For Sale Start Date].[SaleStartDateHierarchy].[Month No], 1,  [ID For Sale Start Date].[SaleStartDateHierarchy].CurrentMember)), 1, -1)
+</Trend>
+      <TrendGraphic>Status Arrow - Ascending</TrendGraphic>
+      <StatusGraphic>Gauge - Ascending</StatusGraphic>
+    </Kpi>
+  </Kpis>
+</Cube>

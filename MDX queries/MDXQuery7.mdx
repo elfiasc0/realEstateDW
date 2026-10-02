@@ -1,0 +1,6 @@
+--Compare the number of potential buyers based on the apartment size category.
+
+SELECT
+{[Measures].[Number of Potential Buyer]} ON COLUMNS,
+{[Apartment].[Size Category].Children} ON ROWS
+FROM [PropertyMaster DW]

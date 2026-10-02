@@ -1,0 +1,12 @@
+--Are there any districts of the branches that have no interested buyers
+
+SELECT
+{[Measures].[Number of Potential Buyer]} ON COLUMNS,
+FILTER(
+	CROSSJOIN ([Apartment].[City].Children, --selecting all the cities
+		Descendants ([Apartment].[AptLocalizationHierarchy].CurrentMember, 
+					[Apartment].[AptLocalizationHierarchy].[District])), -- for each city we select all its districts
+					ISEMPTY([Measures].[Number of Potential Buyer])) ON ROWS --only those where there are no potential buyers
+FROM [Propertymaster DW];
+
+

@@ -1,0 +1,15 @@
+-- Compare the average sales speed based on the number of real estate agents in each branch office.
+WITH 
+MEMBER [Measures].[FormattedAverageSaleSpeed] AS
+    ROUND([Measures].[AverageSaleSpeed], 2)
+SELECT 
+    [Branch].[Number Of Agents].Children ON COLUMNS,
+    [Branch].[City].Children ON ROWS
+FROM 
+    [Propertymaster DW]
+WHERE 
+    (
+        [Measures].[FormattedAverageSaleSpeed],
+        [Branch].[IsCurrent].[True]
+    )
+

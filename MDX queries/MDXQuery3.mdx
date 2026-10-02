@@ -1,0 +1,14 @@
+-- Do apartments sell faster if the ratio of final price and listing price is close to 1
+-- compared to those which have high fluctuations in prices?
+WITH 
+Member [Measures].[Diff-1] As 'Round(Abs([Measures].[PriceFlutuation] - 1), 2)' -- absolute value rounded to 2 decimal places
+		
+SELECT
+    {[Measures].[PriceFlutuation], [Measures].[AverageSaleSpeed], [Measures].[Diff-1]} ON COLUMNS,
+    FILTER(
+        {[Apartment].[ID Apartment].Members},
+        NOT IsEmpty([Measures].[PriceFlutuation]) AND [Measures].[PriceFlutuation] <> 0 AND [Measures].[AverageSaleSpeed] <> 0  -- Exclude rows where the measure is NULL or 0
+    ) ON ROWS
+FROM
+[Propertymaster DW]
+

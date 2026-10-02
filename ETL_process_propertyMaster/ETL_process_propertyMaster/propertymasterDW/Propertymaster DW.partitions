@@ -1,0 +1,1134 @@
+﻿<Cube xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="45c39990-c035-4c8e-99e3-7c9d5fe78aed" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>Propertymaster DW</ID>
+  <MeasureGroups>
+    <MeasureGroup>
+      <ID>Apartment Sale</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="ec9a9593-8fb9-4d91-a6b2-dc9f8d88e296">
+          <ID>Apartment Sale</ID>
+          <Name>Apartment Sale</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="ccd119d5-8416-41bb-b825-d2d4cfde0e99">
+            <DataSourceViewID>Propertymaster DW</DataSourceViewID>
+            <TableID>dbo_Apartment_Sale</TableID>
+          </Source>
+          <StorageMode>Holap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="a4838a25-fd7c-4c8c-be89-d51915515fa1">
+            <SilenceInterval>PT0S</SilenceInterval>
+            <Latency>PT0S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Enabled>true</Enabled>
+            <AggregationStorage>MolapOnly</AggregationStorage>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="6d064e53-ac09-490d-b4f9-9f2722ae729f">
+              <NotificationTechnique>Server</NotificationTechnique>
+            </Source>
+          </ProactiveCaching>
+          <EstimatedRows>13015</EstimatedRows>
+          <AggregationDesignID>AggregationDesign</AggregationDesignID>
+        </Partition>
+      </Partitions>
+      <AggregationDesigns>
+        <AggregationDesign>
+          <ID>AggregationDesign</ID>
+          <Name>AggregationDesign</Name>
+          <CreatedTimestamp>2025-05-29T12:17:20.763333Z</CreatedTimestamp>
+          <LastSchemaUpdate>2025-05-29T12:17:20.763333Z</LastSchemaUpdate>
+          <EstimatedRows>13015</EstimatedRows>
+          <Dimensions>
+            <Dimension>
+              <CubeDimensionID>ID Start Date</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>ID Date</AttributeID>
+                  <EstimatedCount>27395</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Year</AttributeID>
+                  <EstimatedCount>76</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Month No</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Date Value</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>ID Owner</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>ID Person</AttributeID>
+                  <EstimatedCount>26168</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PESEL</AttributeID>
+                  <EstimatedCount>15427</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Name And Surname</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Gender</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Phone Number</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Loyalty Category</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ISCURRENT</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>ID Buyer</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>ID Person</AttributeID>
+                  <EstimatedCount>26168</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PESEL</AttributeID>
+                  <EstimatedCount>15427</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Name And Surname</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Gender</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Phone Number</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Loyalty Category</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ISCURRENT</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Apartment</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>ID Apartment</AttributeID>
+                  <EstimatedCount>10053</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>City</AttributeID>
+                  <EstimatedCount>5</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>District</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Address</AttributeID>
+                  <EstimatedCount>10053</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Postal Code</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Size Category</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Floor Number</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Number Of Rooms</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Decade Of Construction</AttributeID>
+                  <EstimatedCount>8</EstimatedCount>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Real Estate Agent</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>ID Real Estate Agent</AttributeID>
+                  <EstimatedCount>12100</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Branch</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>PESEL</AttributeID>
+                  <EstimatedCount>10100</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Name And Surname</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Gender</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Seniority Category</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Email</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Phone Number</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ISCURRENT</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>ID For Sale Start Date</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>ID Date</AttributeID>
+                  <EstimatedCount>27395</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Year</AttributeID>
+                  <EstimatedCount>76</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Month No</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Date Value</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Junk Sale</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>ID Junk Sale</AttributeID>
+                  <EstimatedCount>90</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Status</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Condition</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Agreement</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>ID End Date</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>ID Date</AttributeID>
+                  <EstimatedCount>27395</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Year</AttributeID>
+                  <EstimatedCount>76</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Month No</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Date Value</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>Branch</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>ID Branch</AttributeID>
+                  <EstimatedCount>6</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>City</AttributeID>
+                  <EstimatedCount>5</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Address</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Postal Code</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Number Of Agents</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>Number Of Apartments</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ISCURRENT</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>AptSaleBridge</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>ID Owner</AttributeID>
+                  <EstimatedCount>13015</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Date</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Apartment</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Person</AttributeID>
+                  <EstimatedCount>26168</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Real Estate Agent</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Branch</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Junk Sale</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>ID End Date 1</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>ID Owner</AttributeID>
+                  <EstimatedCount>13015</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Date</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Apartment</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Person</AttributeID>
+                  <EstimatedCount>26168</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Real Estate Agent</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Branch</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Junk Sale</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>ID Apartment</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>ID Owner</AttributeID>
+                  <EstimatedCount>13015</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Date</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Apartment</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Person</AttributeID>
+                  <EstimatedCount>26168</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Real Estate Agent</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Branch</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Junk Sale</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>ID Start Date 1</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>ID Owner</AttributeID>
+                  <EstimatedCount>13015</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Date</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Apartment</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Person</AttributeID>
+                  <EstimatedCount>26168</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Real Estate Agent</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Branch</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Junk Sale</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>ID For Sale Start Date 1</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>ID Owner</AttributeID>
+                  <EstimatedCount>13015</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Date</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Apartment</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Person</AttributeID>
+                  <EstimatedCount>26168</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Real Estate Agent</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Branch</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Junk Sale</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>ID Real Estate Agent</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>ID Owner</AttributeID>
+                  <EstimatedCount>13015</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Date</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Apartment</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Person</AttributeID>
+                  <EstimatedCount>26168</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Real Estate Agent</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Branch</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Junk Sale</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>ID Junk Sale</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>ID Owner</AttributeID>
+                  <EstimatedCount>13015</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Date</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Apartment</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Person</AttributeID>
+                  <EstimatedCount>26168</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Real Estate Agent</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Branch</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Junk Sale</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>ID Buyer 1</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>ID Owner</AttributeID>
+                  <EstimatedCount>13015</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Date</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Apartment</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Person</AttributeID>
+                  <EstimatedCount>26168</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Real Estate Agent</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Branch</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Junk Sale</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+            <Dimension>
+              <CubeDimensionID>ID Potential Buyer</CubeDimensionID>
+              <Attributes>
+                <Attribute>
+                  <AttributeID>ID Owner</AttributeID>
+                  <EstimatedCount>13015</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Date</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Apartment</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Person</AttributeID>
+                  <EstimatedCount>26168</EstimatedCount>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Real Estate Agent</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Branch</AttributeID>
+                </Attribute>
+                <Attribute>
+                  <AttributeID>ID Junk Sale</AttributeID>
+                </Attribute>
+              </Attributes>
+            </Dimension>
+          </Dimensions>
+          <Aggregations>
+            <Aggregation>
+              <ID>Aggregation 0</ID>
+              <Name>Aggregation 0</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>ID Start Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Owner</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>PESEL</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Buyer</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>PESEL</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Apartment</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Address</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Real Estate Agent</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>PESEL</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID For Sale Start Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Junk Sale</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID End Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Branch</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>City</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>AptSaleBridge</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID End Date 1</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Apartment</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Start Date 1</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID For Sale Start Date 1</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Real Estate Agent</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Junk Sale</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Buyer 1</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Owner</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Potential Buyer</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Owner</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 1</ID>
+              <Name>Aggregation 1</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>ID Start Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Owner</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>PESEL</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Buyer</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>PESEL</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Apartment</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Address</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Real Estate Agent</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>PESEL</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID For Sale Start Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Junk Sale</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID End Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Branch</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>City</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>AptSaleBridge</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID End Date 1</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Apartment</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Start Date 1</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID For Sale Start Date 1</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Real Estate Agent</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Junk Sale</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Owner</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Buyer 1</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Potential Buyer</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Owner</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 2</ID>
+              <Name>Aggregation 2</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>ID Start Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Owner</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>PESEL</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Buyer</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>PESEL</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Apartment</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Address</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Real Estate Agent</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>PESEL</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID For Sale Start Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Junk Sale</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID End Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Branch</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>City</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>AptSaleBridge</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID End Date 1</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Apartment</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Start Date 1</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID For Sale Start Date 1</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Real Estate Agent</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Owner</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Junk Sale</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Buyer 1</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Potential Buyer</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Owner</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 3</ID>
+              <Name>Aggregation 3</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>ID Start Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Owner</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>PESEL</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Buyer</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>PESEL</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Apartment</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Address</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Real Estate Agent</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>PESEL</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID For Sale Start Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Junk Sale</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID End Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Branch</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>City</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>AptSaleBridge</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID End Date 1</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Apartment</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Start Date 1</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID For Sale Start Date 1</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Owner</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Real Estate Agent</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Junk Sale</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Buyer 1</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Potential Buyer</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Owner</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 4</ID>
+              <Name>Aggregation 4</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>ID Start Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Owner</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>PESEL</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Buyer</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>PESEL</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Apartment</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Address</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Real Estate Agent</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>PESEL</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID For Sale Start Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Junk Sale</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID End Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Branch</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>City</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>AptSaleBridge</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID End Date 1</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Apartment</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Start Date 1</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Owner</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID For Sale Start Date 1</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Real Estate Agent</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Junk Sale</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Buyer 1</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Potential Buyer</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Owner</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+            <Aggregation>
+              <ID>Aggregation 5</ID>
+              <Name>Aggregation 5</Name>
+              <Dimensions>
+                <Dimension>
+                  <CubeDimensionID>ID Start Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Owner</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>PESEL</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Buyer</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>PESEL</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Apartment</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>Address</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Real Estate Agent</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>PESEL</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID For Sale Start Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Junk Sale</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID End Date</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>Branch</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>City</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>AptSaleBridge</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID End Date 1</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Apartment</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Owner</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Start Date 1</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID For Sale Start Date 1</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Real Estate Agent</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Junk Sale</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Buyer 1</CubeDimensionID>
+                </Dimension>
+                <Dimension>
+                  <CubeDimensionID>ID Potential Buyer</CubeDimensionID>
+                  <Attributes>
+                    <Attribute>
+                      <AttributeID>ID Owner</AttributeID>
+                    </Attribute>
+                  </Attributes>
+                </Dimension>
+              </Dimensions>
+            </Aggregation>
+          </Aggregations>
+        </AggregationDesign>
+      </AggregationDesigns>
+    </MeasureGroup>
+    <MeasureGroup>
+      <ID>Interest</ID>
+      <Partitions>
+        <Partition dwd:design-time-name="d9631a0a-7578-4e87-a054-b7f0074c2fff">
+          <ID>Interest</ID>
+          <Name>Interest</Name>
+          <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+          <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+          <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
+          <State>Unprocessed</State>
+          <Source xsi:type="DsvTableBinding" dwd:design-time-name="b7e5813e-e967-47e6-a006-e68b18e9c2fa">
+            <DataSourceViewID>Propertymaster DW</DataSourceViewID>
+            <TableID>dbo_Interest</TableID>
+          </Source>
+          <StorageMode>Holap</StorageMode>
+          <CurrentStorageMode>Molap</CurrentStorageMode>
+          <ProcessingMode>Regular</ProcessingMode>
+          <ProactiveCaching dwd:design-time-name="f8a1acac-17a4-43fd-9108-8d26983ba476">
+            <SilenceInterval>PT0S</SilenceInterval>
+            <Latency>PT0S</Latency>
+            <SilenceOverrideInterval>-PT1S</SilenceOverrideInterval>
+            <ForceRebuildInterval>-PT1S</ForceRebuildInterval>
+            <Enabled>true</Enabled>
+            <AggregationStorage>MolapOnly</AggregationStorage>
+            <Source xsi:type="ProactiveCachingInheritedBinding" dwd:design-time-name="b4c16d9d-2fe8-4d2a-999b-43d1e08996e9">
+              <NotificationTechnique>Server</NotificationTechnique>
+            </Source>
+          </ProactiveCaching>
+          <EstimatedRows>14869</EstimatedRows>
+        </Partition>
+      </Partitions>
+    </MeasureGroup>
+  </MeasureGroups>
+</Cube>
