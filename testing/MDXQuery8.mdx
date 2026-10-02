@@ -1,0 +1,18 @@
+--Is there a monthly increase in the number of potential buyers depending on the number of rooms in a property
+
+/*UPDATED: Is there a monthly increase in the number of potential buyers depending on the number of rooms in 
+a property (assuming that all potential buyers reached out in the month the apartment went for sale)*/
+
+WITH
+MEMBER [Measures].[Increase] AS 
+	([Measures].[Number of Potential Buyer], [ID For Sale Start Date].[SaleStartDateHierarchy].CurrentMember) -
+	([Measures].[Number of Potential Buyer], [ID For Sale Start Date].[SaleStartDateHierarchy].CurrentMember.PrevMember)
+
+SELECT
+{[Measures].[Number of Potential Buyer], [Measures].[Increase]} ON COLUMNS,
+FILTER(
+	CROSSJOIN([ID For Sale Start Date].[Year].Children, 
+	Descendants([ID For Sale Start Date].[SaleStartDateHierarchy].CurrentMember, [ID For Sale Start Date].[SaleStartDateHierarchy].[Month No]),
+	[Apartment].[Number Of Rooms].Members),
+	[ID For Sale Start Date].[Year].CurrentMember.Name >= "2020")ON ROWS -- sale started in 2020 so we select only such dates
+FROM [PropertyMaster DW]

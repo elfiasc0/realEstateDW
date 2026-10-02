@@ -1,0 +1,27 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.13.35931.197
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{D2ABAB84-BF74-430A-B69E-9DC6D40DDA17}") = "propertymasterDW", "propertymasterDW.dwproj", "{D6CBCAE2-C6FC-865F-E965-F67DD8063E20}"
+EndProject
+Project("{C9674DCB-5085-4A16-B785-4C70DD1589BD}") = "LoadETL", "..\LoadETL\LoadETL.dtproj", "{6F68A654-A634-5434-4719-FDBCDA87181A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Development|Default = Development|Default
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D6CBCAE2-C6FC-865F-E965-F67DD8063E20}.Development|Default.ActiveCfg = Development
+		{D6CBCAE2-C6FC-865F-E965-F67DD8063E20}.Development|Default.Build.0 = Development
+		{D6CBCAE2-C6FC-865F-E965-F67DD8063E20}.Development|Default.Deploy.0 = Development
+		{6F68A654-A634-5434-4719-FDBCDA87181A}.Development|Default.ActiveCfg = Development
+		{6F68A654-A634-5434-4719-FDBCDA87181A}.Development|Default.Build.0 = Development
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {FC6F1DEF-DEB5-4D69-B620-4F79A71747C4}
+	EndGlobalSection
+EndGlobal
